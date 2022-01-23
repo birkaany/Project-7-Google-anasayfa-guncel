@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul, footer ul{
+    display: flex;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li, footer ul li{
+    margin: 5px 10px;
+    line-height: 24px;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+}
+
+.menu-icon a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.menu-icon a:hover{
+    background-color: #eee;
+
+}
+.menu-icon a svg{
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+.profile-pic{
+    width: 35px;
+    height: 35px;
+
+}
+.profile-pic img{
+    border-radius: 50%;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.search-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.search-form .form-search-block{
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    display: flex;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;}
+.search-form .form-search-block .search-icon{
+    width: 25px;
+    height: 25px;
+    opacity: 0.3;
+}
+.search-form .form-search-block input[type="text"]{
+    line-height: 25px;
+    width: 400px;
+    border: 0;
+}
+.search-form .form-search-block input[type="text"]:focus{
+    outline: none;
+}
+ .search-form .form-search-block .voice-icon img{
+    width: 25px;
+    height: 25px;
+
+ }
+.search-icon, .voice-icon{
+    margin: 0 5px;
+}
+.search-form .form-buttons input[type="submit"]{
+    background: #f8f9fa;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+}
+.search-form .form-buttons input[type="submit"]:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+footer{
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 30px;
+    border-top: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
